@@ -71,6 +71,12 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.msm8998
 
+# Moto Camera 2
+TARGET_MOTCAMERA2 := primary
+TARGET_USES_MOTCAMERA2 := true
+
+$(call inherit-product, vendor/motorola/MotCamera2/motcamera2.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
