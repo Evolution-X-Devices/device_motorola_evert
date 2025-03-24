@@ -27,6 +27,7 @@ DEVICE_PATH := device/motorola/evert
 AB_OTA_PARTITIONS += \
     boot \
     system \
+    system_ext \
     vendor
 
 AB_OTA_UPDATER := true
@@ -48,6 +49,7 @@ TARGET_KERNEL_CONFIG := lineageos_evert_defconfig
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2885681152
+BOARD_SYSTEM_EXTIMAGE_PARTITION_SIZE := 251658240   #   245760 * 1024 (OEM)
 BOARD_VENDORIMAGE_PARTITION_SIZE := 956301312
 
 # Power
