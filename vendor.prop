@@ -19,7 +19,7 @@ vendor.audio.offload.gapless.enabled=false
 vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
-bluetooth.device.default_name=Moto G6 Plus
+bluetooth.device.default_name=moto g(6) plus
 
 # Display
 ro.hardware.vulkan=sdm660
