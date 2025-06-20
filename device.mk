@@ -17,9 +17,6 @@
 # Vendor blobs
 $(call inherit-product, vendor/motorola/evert/evert-vendor.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # A/B updater
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -92,6 +89,12 @@ PRODUCT_COPY_FILES += \
 # PocketMode
 PRODUCT_PACKAGES += \
     MotoPocketMode
+
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworksResDevice \
+    SettingsResDevice \
+    SettingsProviderResDevice
 
 # Sensors
 PRODUCT_COPY_FILES += \
