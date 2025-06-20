@@ -60,8 +60,9 @@ PRODUCT_PACKAGES += \
     FM2
 
 # Init
-$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
+PRODUCT_PACKAGES += \
+    init.evert.rc \
+    init.recovery.evert.rc
 
 # Lineage Touch HAL
 PRODUCT_PACKAGES += \
@@ -91,10 +92,6 @@ PRODUCT_COPY_FILES += \
 # PocketMode
 PRODUCT_PACKAGES += \
     MotoPocketMode
-
-# Recovery
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/init.recovery.evert.rc:root/init.recovery.evert.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \

@@ -1,0 +1,18 @@
+//
+// SPDX-FileCopyrightText: 2024 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.evert.rc",
+    src: "init.evert.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.evert.rc",
+    src: "init.recovery.evert.rc",
+    sub_dir: "init",
+    recovery: true,
+}
