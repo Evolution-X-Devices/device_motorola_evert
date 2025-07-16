@@ -47,6 +47,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom.ramdisk \
     init.evert.rc \
     init.recovery.evert.rc
 
