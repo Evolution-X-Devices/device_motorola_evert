@@ -21,4 +21,4 @@ PRODUCT_NAME := lineage_evert
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="evert-user 9 PPW29.116-16-30 40d1e release-keys" \
     BuildFingerprint=motorola/evert/evert:9/PPW29.116-16-30/40d1e:user/release-keys \
-    DeviceName=evert
+    DeviceProduct=evert
